@@ -6,7 +6,8 @@
   "scripts": {
     "start2": "node index.js",
     "backend": "nodemon server/index.js",
-    "test": "echo \"Error: no test sepecified\" && exit 1"
+    "test": "echo \"Error: no test sepecified\" && exit 1",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\" "
   },
   "author": "younghawn",
   "license": "ISC",
