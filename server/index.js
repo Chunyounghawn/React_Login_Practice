@@ -79,7 +79,7 @@ app.post('/api/users/login', (req, res) => {
 
 app.get('/api/users/auth', auth ,(req, res) => {
   //이까지온거면 미들웨어에 auth를 다 통과했다는소리(true)
-  //어떤페이지든지 유저정보를 이용할수있기때문에 편해짐.
+  //어떤페이지든지 유저정보를 이용할수있기때문에 편해짐
   res.status(200).json({
     _id: req.user._id,
     isAdmin: req.user.role === 0 ? false : true, //0이면 일반유저, 나머진 관리자
