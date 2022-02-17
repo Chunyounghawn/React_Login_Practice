@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import {loginUser} from '../../../_actions/user_action'
 import { useNavigate } from 'react-router-dom';
 //import { response } from 'express';
-import Auth from 'C:/react_practice/client/src/hoc/auth'
+import Auth from '../../../hoc/auth'
 
 function LoginPage(props) {
   const dispatch = useDispatch();
@@ -67,4 +67,4 @@ function LoginPage(props) {
   )
 }
 
-export default Auth( LoginPage, null );
+export default Auth( LoginPage, false );

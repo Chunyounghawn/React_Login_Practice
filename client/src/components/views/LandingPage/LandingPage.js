@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import Auth from 'C:/react_practice/client/src/hoc/auth'
+import Auth from '../../../hoc/auth'
 
 
 function LandingPage() {

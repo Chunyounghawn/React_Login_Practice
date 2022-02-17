@@ -2,7 +2,7 @@ import {useDispatch} from 'react-redux'
 import React, { useState } from 'react'
 import {registerUser} from '../../../_actions/user_action'
 import { useNavigate } from 'react-router-dom';
-import Auth from 'C:/react_practice/client/src/hoc/auth'
+import Auth from '../../../hoc/auth'
 
 function RegisterPage(props) {
   const dispatch = useDispatch();
@@ -90,4 +90,4 @@ function RegisterPage(props) {
   )
 }
 
-export default Auth( RegisterPage, null );
+export default Auth( RegisterPage, false );
