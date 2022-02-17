@@ -37,11 +37,12 @@ const userSchema = mongoose.Schema({
 
 //몽구스 메소드, save 하기전에 하는것
 userSchema.pre('save', function (next) {
-
+//next는 미들웨어 단계에서 이거 다하면 next?라고 생각하면될듯.
     var user = this;
 
     if (user.isModified('password')) {
         //비밀번호를 암호화 시킨다. salt를 만들어 암호화함. salt=암호화된 코드
+        //isModified는 몽구스 함수
         bcrypt.genSalt(saltRounds, function (err, salt) {
             if (err) return next(err)
             bcrypt.hash(user.password, salt, function (err, hash) {

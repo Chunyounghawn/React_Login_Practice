@@ -9,8 +9,8 @@ import { useNavigate } from 'react-router-dom';
 function LoginPage(props) {
   const dispatch = useDispatch();
 
-  const [Email, setEmail] = useState("")
-  const [Password, setPassword] = useState("")
+  const [Email, setEmail] = useState("young1@naver.com")
+  const [Password, setPassword] = useState("1123456")
   
   const onEmailHandler=(event) => {
     setEmail(event.currentTarget.value)
