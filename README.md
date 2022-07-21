@@ -1,10 +1,10 @@
-### 로그인 예제 연습  
-사용기술  
+## 로그인 예제 연습  
+### 사용기술  
 - mongodb  
 - node  
 - react  
 
-핵심 라이브러리  
+### 핵심 라이브러리  
 - jsonwebtoken  
 - mongoose  
 - bcrypt  
@@ -61,7 +61,7 @@ userSchema.statics.findByToken = function(token, cb) {
 ```
 
 
-이후 쿠키를 통한 인증 및 권한 부여
+이후 쿠키를 통한 인증 및 권한 부여  
 ![image](https://user-images.githubusercontent.com/83907810/180106160-73df2daf-0b4d-467b-abcc-911ba027e692.png)
 
 
