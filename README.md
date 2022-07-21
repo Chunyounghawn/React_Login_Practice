@@ -65,6 +65,10 @@ userSchema.statics.findByToken = function(token, cb) {
 ![image](https://user-images.githubusercontent.com/83907810/180106160-73df2daf-0b4d-467b-abcc-911ba027e692.png)
 
 
+## 시연영상
+https://user-images.githubusercontent.com/83907810/180108739-cf52657e-fb0c-488f-95f6-283b9e2a28d2.mp4
+
+
 
 
 
